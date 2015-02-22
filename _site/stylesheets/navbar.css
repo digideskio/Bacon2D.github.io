@@ -1,34 +1,61 @@
 /* Begin Navigation Bar Styling */
-ul#nav {
-  width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0px;
-  list-style: none;
-  overflow: hidden;
-  zoom: 1;
-  background-color: ##f2f2f2;
-}
-ul#nav li {
-  float: left;
-}
-ul#nav li:first-child a {
-   border-left: none;
+.navigation {
+    margin: 0 auto 20px auto;
 }
 
-ul#nav a {
-  width: 8em;
-  display: block;
-  border-left: 1px solid #ccc;
-  padding: 5px;
-  margin-right: 0px;
-  text-decoration: none;
-  color: #069;
-  text-align: center;
-}
-ul#nav a:hover {
-  background-color: #fff;
-  color: #007edf;
+.navigation-items {
+    list-style: none;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    padding: 0;
 }
 
-/* End navigation bar styling. */
+.navigation-items li {
+    border-bottom: 1px solid #aaa;
+}
+
+.navigation-items a {
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: left;
+
+    text-decoration: none;
+    color: #000;
+
+}
+
+.navigation-items a:hover {
+    background-color: #fff;
+    color: #007edf;
+}
+
+/*******************************************************************************
+Media to Large Device Styles
+*******************************************************************************/
+
+@media screen and (min-width: 992px) {
+
+    .navigation {
+        border-bottom: 1px solid #aaa;
+    }
+
+    .navigation-items li {
+        display: inline-block;
+        border: none;
+    }
+
+    .navigation-items a {
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .navigation-items li:first-child a {
+        padding-left: 0;
+    }
+
+
+}
+
+/* End navigation-items bar styling. */

@@ -3,18 +3,26 @@
 
 {% include header.html %}
 
-  <body>
+    <body>
 
-    {% include face.html %}
+        <div class="wrap">
 
-    <div id="main_content_wrap" class="outer">
+            {% include face.html %}
 
-        {% include nav.html %}
+            <div class="main">
 
-        <section id="main_content" class="inner">
-            {{ content }}
-        </section>
+                <nav class="navigation">
+                    {% include nav.html %}
+                </nav>
 
-        {% include footer.html %}
+                <section class="content">
+                    {{ content }}
+                </section>
+
+            </div>
+
+            {% include footer.html %}
+
+        </div>
     </body>
 </html>
